@@ -4,6 +4,8 @@
               jucerFormatVersion="1">
   <MAINGROUP id="CsXJzz" name="ReverbPlugin">
     <GROUP id="{D9DB9744-528A-4CB9-73AF-628E9B36F257}" name="Source">
+      <FILE id="TgkAwL" name="FBFCDelay.cpp" compile="1" resource="0" file="Source/FBFCDelay.cpp"/>
+      <FILE id="jd87A8" name="FBFCDelay.h" compile="0" resource="0" file="Source/FBFCDelay.h"/>
       <FILE id="ll11n7" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="zA9b2x" name="PluginProcessor.h" compile="0" resource="0"
