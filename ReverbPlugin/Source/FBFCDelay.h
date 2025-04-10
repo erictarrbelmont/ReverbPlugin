@@ -21,13 +21,13 @@ public:
     
     void processDelay();
     
-    void setTime(float tMs);
+    void setTime(float t);
     
     void setGain(float g);
     
 private:
     
-    float timeMS;
+    float timeSamp;
     
     float gain;
     

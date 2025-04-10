@@ -18,8 +18,8 @@ void processDelay(){
     
 };
 
-void setTime(float tMs){
-    timeMs = tMs;
+void setTime(float t){
+    timeSamp = t;
 };
 
 void setGain(float g){
