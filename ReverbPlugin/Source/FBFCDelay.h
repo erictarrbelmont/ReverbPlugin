@@ -27,8 +27,8 @@ public:
     
 private:
     
-    float timeSamp;
+    float timeSamp = 128.f;
     
-    float gain;
+    float gain = 1.f;
     
 };
