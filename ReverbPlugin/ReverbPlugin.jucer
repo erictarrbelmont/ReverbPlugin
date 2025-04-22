@@ -17,6 +17,10 @@
         <FILE id="g0pGtn" name="AllPassFilter.h" compile="0" resource="0" file="Source/DSP/AllPassFilter.h"/>
         <FILE id="kggHY2" name="FractionalDelay.cpp" compile="1" resource="0"
               file="Source/DSP/FractionalDelay.cpp"/>
+        <FILE id="c3pPsq" name="SchroederReverb.cpp" compile="1" resource="0"
+              file="Source/DSP/SchroederReverb.cpp"/>
+        <FILE id="C6K08v" name="SchroederReverb.h" compile="0" resource="0"
+              file="Source/DSP/SchroederReverb.h"/>
         <FILE id="Odkk7D" name="FractionalDelay.hpp" compile="0" resource="0"
               file="Source/DSP/FractionalDelay.hpp"/>
       </GROUP>

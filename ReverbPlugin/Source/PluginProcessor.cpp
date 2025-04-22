@@ -138,12 +138,19 @@ void ReverbPluginAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer,
     for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
         buffer.clear (i, 0, buffer.getNumSamples());
 
+    schroeder.prepare(getSampleRate());
+    schroeder.setFBGain(FBCFGain);
+    schroeder.setAPGain(APFGain);
 
     for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         auto* channelData = buffer.getWritePointer (channel);
 
-        // ..do something to the data...
+        for (int n = 0; n < buffer.getNumSamples() ; ++n) {
+            float x = buffer.getSample(channel, n);
+            schroeder.processSample(x, channel);
+            
+        }
     }
 }
 

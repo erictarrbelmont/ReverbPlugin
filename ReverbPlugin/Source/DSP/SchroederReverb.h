@@ -11,7 +11,7 @@
 #pragma once
 #pragma once
 #include "FBCF.h"
-#include "APF.h"
+#include "AllPassFilter.h"
 
 class SchroederReverb {
     
@@ -52,7 +52,7 @@ private:
     FBCF thirdDelayBlock;
     FBCF fourthDelayBlock;
     
-    APF firstAPFFilter;
-    APF secondAPFFilter;
+    AllPassFilter firstAPFFilter;
+    AllPassFilter secondAPFFilter;
     
 };

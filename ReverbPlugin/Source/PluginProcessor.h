@@ -9,6 +9,7 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "SchroederReverb.h"
 
 //==============================================================================
 /**
@@ -52,8 +53,19 @@ public:
     //==============================================================================
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
+    
+    static constexpr float APFGAIN_DEFAULT = 0.0f;
+    
+    float APFGain = APFGAIN_DEFAULT;
+    
+    static constexpr float FBCFGAIN_DEFAULT = 0.0f;
+    
+    float FBCFGain = FBCFGAIN_DEFAULT;
 
 private:
+    
+    SchroederReverb schroeder;
+    
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ReverbPluginAudioProcessor)
 };
