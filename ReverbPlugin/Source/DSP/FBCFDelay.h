@@ -19,7 +19,7 @@ class FBCFDelay
 public:
     
     
-    void prepare(float Fs, float delay, float speed);
+    void prepare(float Fs, float d, float speed);
     
     void processSample(float input, float channel);
     
@@ -30,6 +30,8 @@ public:
 private:
     
     float gain = 1.f;
+    
+    float currentDelay = 0.f;
     
     FractionalDelay delay {1000.f, 1.f};
     

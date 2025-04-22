@@ -18,21 +18,31 @@
     //set Speed
    
 //};
-void FBCFDelay::prepare(float Fs, float delay, float speed){
+
+
+
+void FBCFDelay::prepare(float Fs, float d, float speed){
     delay.setFs(Fs);
+    delay.setSpeed(speed);
+    delay.setDelaySamples(d);
 }
 
 void FBCFDelay::processSample(float input, float channel){
-    float delaySamp = delay.processSample(input, channel);
-    
-    float finalDelay = gain * delaySamp;
+    float delaySum = input + currentDelay;
+    float delaySamp = delay.processSample(delaySum, channel);
+    currentDelay = gain * delaySamp;
 };
 
 
 void FBCFDelay::setGain(float g){
-    gain = g;
-    //.2 to .99?
-    //gain determines RT60
-};
-
-
+    if (g < .2f){
+        g = .2f;
+    } else if (g > .99f){
+        g = .99f;
+    } else {
+        gain = g;
+        
+        //gain determines RT60
+    };
+    
+}
