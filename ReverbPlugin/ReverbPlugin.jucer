@@ -4,8 +4,6 @@
               jucerFormatVersion="1">
   <MAINGROUP id="CsXJzz" name="ReverbPlugin">
     <GROUP id="{D9DB9744-528A-4CB9-73AF-628E9B36F257}" name="Source">
-      <FILE id="TgkAwL" name="FBFCDelay.cpp" compile="1" resource="0" file="Source/FBFCDelay.cpp"/>
-      <FILE id="jd87A8" name="FBFCDelay.h" compile="0" resource="0" file="Source/FBFCDelay.h"/>
       <FILE id="ll11n7" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="zA9b2x" name="PluginProcessor.h" compile="0" resource="0"
@@ -14,6 +12,8 @@
             file="Source/PluginEditor.cpp"/>
       <FILE id="pYvWam" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
       <GROUP id="{09B89CE7-5805-0232-0B4C-A420456FC016}" name="DSP">
+        <FILE id="lZpVg1" name="FBCFDelay.cpp" compile="1" resource="0" file="Source/DSP/FBCFDelay.cpp"/>
+        <FILE id="qoNIXF" name="FBCFDelay.h" compile="0" resource="0" file="Source/DSP/FBCFDelay.h"/>
         <FILE id="kggHY2" name="FractionalDelay.cpp" compile="1" resource="0"
               file="Source/DSP/FractionalDelay.cpp"/>
         <FILE id="Odkk7D" name="FractionalDelay.hpp" compile="0" resource="0"

@@ -1,7 +1,7 @@
 /*
   ==============================================================================
 
-    FBFCDelay.h
+    FBCFDelay.h
     Created: 10 Apr 2025 1:38:34pm
     Author:  Jakobi Braden
 
@@ -11,24 +11,26 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "FractionalDelay.hpp"
 
-class FBFC
+class FBCFDelay
 {
     
 public:
     
-    void prepare();
     
-    void processDelay();
+    void prepare(float Fs, float delay, float speed);
     
-    void setTime(float t);
+    void processSample(float input, float channel);
     
     void setGain(float g);
     
+    
+    
 private:
     
-    float timeSamp = 128.f;
-    
     float gain = 1.f;
+    
+    FractionalDelay delay {1000.f, 1.f};
     
 };
