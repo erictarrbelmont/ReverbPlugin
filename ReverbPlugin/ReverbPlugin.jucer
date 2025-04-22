@@ -12,6 +12,9 @@
             file="Source/PluginEditor.cpp"/>
       <FILE id="pYvWam" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
       <GROUP id="{09B89CE7-5805-0232-0B4C-A420456FC016}" name="DSP">
+        <FILE id="hdG0mr" name="AllPassFilter.cpp" compile="1" resource="0"
+              file="Source/DSP/AllPassFilter.cpp"/>
+        <FILE id="g0pGtn" name="AllPassFilter.h" compile="0" resource="0" file="Source/DSP/AllPassFilter.h"/>
         <FILE id="kggHY2" name="FractionalDelay.cpp" compile="1" resource="0"
               file="Source/DSP/FractionalDelay.cpp"/>
         <FILE id="Odkk7D" name="FractionalDelay.hpp" compile="0" resource="0"
