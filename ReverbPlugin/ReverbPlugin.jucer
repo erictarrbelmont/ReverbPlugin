@@ -23,6 +23,8 @@
               file="Source/DSP/SchroederReverb.h"/>
         <FILE id="Odkk7D" name="FractionalDelay.hpp" compile="0" resource="0"
               file="Source/DSP/FractionalDelay.hpp"/>
+        <FILE id="WwyZco" name="FBCFDelay.cpp" compile="1" resource="0" file="Source/DSP/FBCFDelay.cpp"/>
+        <FILE id="WNY3n4" name="FBCFDelay.h" compile="0" resource="0" file="Source/DSP/FBCFDelay.h"/>
       </GROUP>
     </GROUP>
   </MAINGROUP>
