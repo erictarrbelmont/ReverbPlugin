@@ -16,10 +16,6 @@ class AllPassFilter
     
     public:
     
-    AllPassFilter();
-    
-    ~AllPassFilter();
-    
     void prepare();
     
     float processSample(float x, int channel);

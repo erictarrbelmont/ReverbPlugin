@@ -10,7 +10,7 @@
 
 #pragma once
 #pragma once
-#include "FBCF.h"
+#include "FBCFDelay.h"
 #include "AllPassFilter.h"
 
 class SchroederReverb {
@@ -33,10 +33,10 @@ public:
     }
     
     // Processing by sample
-    void processSample (float x, const int c) {}
+    float processSample (float x, const int c);
     
     // Processing by buffer
-    void process (float * buffer, const int N, const int c) {}
+    void process (float * buffer, const int N, const int c);
     
     
 private:
@@ -47,10 +47,10 @@ private:
     float APGain = 0.f; // Affects Diffusion, one value will be applied to all intances of APF
     
     // Intances for each FBCF and APF filters labeled accordingly
-    FBCF firstDelayBlock;
-    FBCF secondDelayBlock;
-    FBCF thirdDelayBlock;
-    FBCF fourthDelayBlock;
+    FBCFDelay firstDelayBlock;
+    FBCFDelay secondDelayBlock;
+    FBCFDelay thirdDelayBlock;
+    FBCFDelay fourthDelayBlock;
     
     AllPassFilter firstAPFFilter;
     AllPassFilter secondAPFFilter;

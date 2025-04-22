@@ -9,7 +9,7 @@
 #pragma once
 
 #include <JuceHeader.h>
-#include "SchroederReverb.h"
+#include "./DSP/SchroederReverb.h"
 
 //==============================================================================
 /**
