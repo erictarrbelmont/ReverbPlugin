@@ -16,9 +16,9 @@ class AllPassFilter
     
     public:
     
-    AllPassFilter();
-    
-    ~AllPassFilter();
+//    AllPassFilter();
+//    
+//    ~AllPassFilter();
     
     void prepare();
     
