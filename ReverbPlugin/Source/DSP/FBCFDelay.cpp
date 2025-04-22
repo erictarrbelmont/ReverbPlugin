@@ -27,10 +27,12 @@ void FBCFDelay::prepare(float Fs, float d, float speed){
     delay.setDelaySamples(d);
 }
 
-void FBCFDelay::processSample(float input, float channel){
+float FBCFDelay::processSample(float input, int channel){
     float delaySum = input + currentDelay;
     float delaySamp = delay.processSample(delaySum, channel);
     currentDelay = gain * delaySamp;
+    
+    return currentDelay;
 };
 
 

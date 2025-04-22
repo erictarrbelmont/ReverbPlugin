@@ -21,7 +21,7 @@ public:
     
     void prepare(float Fs, float d, float speed);
     
-    void processSample(float input, float channel);
+    float processSample(float input, int channel);
     
     void setGain(float g);
     

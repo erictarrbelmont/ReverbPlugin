@@ -150,11 +150,21 @@ void ReverbPluginAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer,
     // the samples and the outer loop is handling the channels.
     // Alternatively, you can process the samples with the channels
     // interleaved by keeping the same state.
+    
+    float N = buffer.getNumSamples();
+
+    delay.prepare(getSampleRate(), 1000.f, 1.f);
+    delay.setGain(0.8f);
+    
     for (int channel = 0; channel < totalNumInputChannels; ++channel)
     {
         auto* channelData = buffer.getWritePointer (channel);
 
-        // ..do something to the data...
+        for (int n = 0; n < N; ++n){
+            
+       
+            
+        }
     }
 }
 

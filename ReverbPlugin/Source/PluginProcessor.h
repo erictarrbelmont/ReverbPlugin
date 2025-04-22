@@ -10,6 +10,7 @@
 
 #include <JuceHeader.h>
 #include "./DSP/FractionalDelay.hpp"
+#include "./DSP/FBCFDelay.h"
 
 //==============================================================================
 /**
@@ -57,4 +58,6 @@ public:
 private:
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ReverbPluginAudioProcessor)
+    
+    FBCFDelay delay;
 };
